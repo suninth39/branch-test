@@ -1,0 +1,39 @@
+# My lecture Note   
+---
+###### 202334412 Kang seonkoo
+---
+### First setup  
+```
+$ git config --global user.Kang seonkoo 
+$ git config --global user.suninth@gachon.ac.kr
+$ git config --global init.defaultBranch main
+$ git config --list
+$ git config --list --show-origin
+$ git config user.name
+Kang seon koo
+```
+---
+- **git init** : Initializing a repository in an xxisting directory
+- **git status** : Print contents about projects that git is currently cognizing.
+- **git add[file_name]** : Adding a new file to be staged
+- **git rm-cached[file_name]** : Unstaging a file. (except file from staging area.)
+---
+
+### gitignore
+- Ignoring a file
+```sh
+'*.a' : ignore all .a files
+'!lib.a' : but do track lib.a, even though you are ignoring .a files above.
+'/YODO' : only ingnore the TODO file in the current directory, not subdir
+'build/' : ignore all files in any directory named build.
+'doc/*.txt' : ignore doc/notes.txt, but not doc/server/arch.txt.
+'doc/**/*.pdf' : ignore all .pdf files in the doc/ directory and any of its subdirectories.
+```
+### Change branch name
+- git branch[new name] : create new branch 
+- git branch -m [old name][new name] : change old-name to new-name
+
+### Commit
+- **git commit** : open vim that can type commit message.
+- **git commit -m "commit message"** : commit files currently remaining
+
